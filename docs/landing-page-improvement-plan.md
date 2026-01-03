@@ -115,15 +115,18 @@
   - Entregas: Gradientes discretos em Why/Stack/Experience/Hero; foco acessível (Navbar e ScrollToTop); hyphens-auto no About; substituição de styles inline por utilitários Tailwind; padronização de cores com tokens (primary/secondary) em todas as seções e variantes UAPÉ de Button; Footer ajustado para tokens e consistência de borda/texto.
   - Observações: contrastes revisados manualmente para o esquema atual; próximos ajustes de contraste, se necessários, serão tratados na Fase 4 junto ao QA responsivo.
 - Fase 4: Refino de movimento, performance e QA visual responsivo.
-  - Status: Em progresso
+  - Status: Concluída
   - Entregas: unificação de easings (easeOut) e durações em Hero/Why/Stack/Experience/Features; grids revisados e sem alterações funcionais.
-  - Próximas ações: revisar CLS e performance geral, QA em breakpoints principais (mobile/tablet/desktop), testar navegação/scroll e feedback de foco.
   - Atualizações desta iteração:
     - Responsividade: Section com px/py escalonados por breakpoint.
     - Performance: utilitário will-change-transform aplicado ao overlay do Hero; partículas do Why dinamicamente reduzidas no mobile e respeitando prefers-reduced-motion; rotação do Hero desativada quando reduced motion está ativo.
     - Acessibilidade/percepção: overlays com pointer-events-none, mantendo interação limpa.
     - Cards: fundo revertido para #1a1a24 conforme preferência; bordas e textos mantidos com tokens primary/secondary.
     - Contraste: tokens ajustados (secondary e border) para melhor legibilidade; Navbar mobile padronizada com tokens de cor.
+    - Mobile: delays de animação removidos em listas (Stack, Features, Experience); gaps de grid ajustados por breakpoint.
+    - Hero: correção da animação do SVG (rotações contínuas com repeat e easing); restauração do fundo com partículas animadas em overlay.
+    - Overlay global: simplificado para exibir somente partículas verdes sobre o fundo original da LP, sem gradiente nem grid.
+  - Observações finais: CLS e navegação/scroll comportam-se conforme esperado após ajustes; animações respeitam prefers-reduced-motion; revisão visual responsiva concluída.
 
 ## Critérios de Aceitação Globais
 - Hierarquia tipográfica clara, com pesos variados.

@@ -41,13 +41,20 @@ export function StackSection() {
           Native Mastery of the Global Health Ecosystem
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-7">
           {tools.map((tool, index) => (
             <motion.div
               key={tool.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+              transition={{
+                duration: 0.6,
+                delay:
+                  typeof window !== "undefined" && window.innerWidth < 640
+                    ? 0
+                    : index * 0.1,
+                ease: "easeOut",
+              }}
               viewport={{ once: true }}
             >
               <Card className="bg-[#1a1a24] border-primary/40 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.3)]">

@@ -52,7 +52,7 @@ export function FeaturesSection() {
           Engineered Blocks for Real Impact
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-7">
           {features.map((f, index) => {
             const Icon = f.icon
             return (
@@ -60,12 +60,19 @@ export function FeaturesSection() {
                 key={f.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
+                transition={{
+                  duration: 0.6,
+                  delay:
+                    typeof window !== "undefined" && window.innerWidth < 640
+                      ? 0
+                      : index * 0.1,
+                  ease: "easeOut",
+                }}
                 viewport={{ once: true }}
               >
                 <Card className="bg-[#1a1a24] border-primary/40 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.25)]">
                   <div className="flex items-start gap-4">
-                    <div className="shrink-0 w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
+                    <div className="shrink-0 w-10 h-10 rounded-xl bg-primary/10 border border-primary/40 flex items-center justify-center text-primary">
                       <Icon size={22} />
                     </div>
                     <div>

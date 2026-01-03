@@ -10,6 +10,7 @@ import { FeaturesSection } from "@/src/components/uape/features-section"
 import { Footer } from "@/src/components/uape/footer"
 import { Navbar } from "@/src/components/uape/navbar"
 import { ScrollToTop } from "@/src/components/uape/scroll-to-top"
+import { BackgroundOverlay } from "@/src/components/uape/background-overlay"
 
 export default function UapePage() {
   const [scrollY, setScrollY] = useState(0)
@@ -21,16 +22,19 @@ export default function UapePage() {
   }, [])
 
   return (
-    <div className="bg-[#0a0a0f] text-white overflow-x-hidden">
-      <Navbar />
-      <HeroSection scrollY={scrollY} />
-      <WhySection />
-      <FeaturesSection />
-      <StackSection />
-      <AboutSection />
-      <ExperienceSection />
-      <Footer />
-      <ScrollToTop />
+    <div className="bg-[#0a0a0f] text-white overflow-x-hidden relative">
+      <BackgroundOverlay scrollY={scrollY} />
+      <div className="relative z-10">
+        <Navbar />
+        <HeroSection scrollY={scrollY} />
+        <WhySection />
+        <FeaturesSection />
+        <StackSection />
+        <AboutSection />
+        <ExperienceSection />
+        <Footer />
+        <ScrollToTop />
+      </div>
     </div>
   )
 }

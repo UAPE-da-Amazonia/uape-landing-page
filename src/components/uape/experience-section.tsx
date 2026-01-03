@@ -28,7 +28,14 @@ export function ExperienceSection() {
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
+              transition={{
+                duration: 0.6,
+                delay:
+                  typeof window !== "undefined" && window.innerWidth < 640
+                    ? 0
+                    : index * 0.2,
+                ease: "easeOut",
+              }}
               viewport={{ once: true }}
               className="mx-auto w-fit flex items-center gap-3 group"
             >
