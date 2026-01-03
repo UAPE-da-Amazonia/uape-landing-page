@@ -122,6 +122,7 @@
     - Responsividade: Section com px/py escalonados por breakpoint.
     - Performance: utilitário will-change-transform aplicado ao overlay do Hero; partículas do Why dinamicamente reduzidas no mobile e respeitando prefers-reduced-motion; rotação do Hero desativada quando reduced motion está ativo.
     - Acessibilidade/percepção: overlays com pointer-events-none, mantendo interação limpa.
+    - Cards: fundo revertido para #1a1a24 conforme preferência; bordas e textos mantidos com tokens primary/secondary.
 
 ## Critérios de Aceitação Globais
 - Hierarquia tipográfica clara, com pesos variados.
