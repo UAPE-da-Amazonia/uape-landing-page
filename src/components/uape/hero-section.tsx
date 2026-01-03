@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/src/components/ui/button"
+import { Section } from "@/src/components/ui/section"
 import { motion } from "framer-motion"
 
 interface HeroSectionProps {
@@ -9,7 +10,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ scrollY }: HeroSectionProps) {
   return (
-    <section id="home" className="min-h-screen flex flex-col items-center justify-center relative px-6">
+    <Section id="home" className="flex flex-col items-center justify-center relative">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,11 +51,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
           Translating complex epidemiological challenges into resilient data ecosystems. From field collection to global
           surveillance, we build the foundations that save lives.
         </p>
-        <Button
-          size="lg"
-          className="bg-transparent border-2 border-[#00ff9d] text-[#00ff9d] hover:bg-[#00ff9d] hover:text-[#0a0a0f] transition-all duration-300 font-mono text-lg px-8 py-6"
-          style={{ boxShadow: "0 0 20px rgba(0, 255, 157, 0.3)" }}
-        >
+        <Button size="xl" variant="uapeOutline" className="font-mono text-lg">
           [ Initialize Consultation ]
         </Button>
       </motion.div>
@@ -72,6 +69,6 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
           }}
         />
       </div>
-    </section>
+    </Section>
   )
 }

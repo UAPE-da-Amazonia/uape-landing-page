@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
+import { Section } from "@/src/components/ui/section"
 
 export function AboutSection() {
   const [lines, setLines] = useState<Array<{ x1: number; y1: number; x2: number; y2: number }>>([])
@@ -18,7 +19,7 @@ export function AboutSection() {
   }, [])
 
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center px-6 py-24 relative">
+    <Section id="about" className="relative">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -30,7 +31,7 @@ export function AboutSection() {
           Two Decades of Intelligence. A Lifetime of Impact.
         </h2>
 
-        <div className="space-y-6 text-lg md:text-xl text-white/90 leading-relaxed">
+        <div className="space-y-6 text-lg md:text-xl text-white/90 leading-relaxed text-justify">
           <p>
             The <span className="text-[#00ff9d] font-semibold">UAPÉ Collective</span> is not just a software agency. We
             are a specialized task force of <span className="text-[#20d5d5]">Software Engineers</span>,
@@ -69,6 +70,6 @@ export function AboutSection() {
           ))}
         </svg>
       </div>
-    </section>
+    </Section>
   )
 }

@@ -2,6 +2,7 @@
 
 import { Card } from "@/src/components/ui/card"
 import { motion } from "framer-motion"
+import { Section } from "@/src/components/ui/section"
 
 const tools = [
   {
@@ -28,7 +29,7 @@ const tools = [
 
 export function StackSection() {
   return (
-    <section id="stack" className="min-h-screen flex items-center justify-center px-6 py-24">
+    <Section id="stack">
       <div className="max-w-7xl w-full">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -57,6 +58,6 @@ export function StackSection() {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   )
 }

@@ -1,6 +1,7 @@
 "use client"
 
 import { Button } from "@/src/components/ui/button"
+import { Section } from "@/src/components/ui/section"
 import { motion } from "framer-motion"
 
 const achievements = [
@@ -11,7 +12,7 @@ const achievements = [
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="min-h-screen flex items-center justify-center px-6 py-24">
+    <Section id="experience">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -31,22 +32,18 @@ export function ExperienceSection() {
               viewport={{ once: true }}
               className="flex items-start gap-4 group"
             >
-              <div className="flex-shrink-0 w-3 h-3 rounded-full bg-[#00ff9d] mt-2 group-hover:shadow-[0_0_20px_rgba(0,255,157,0.8)] transition-all duration-300" />
+              <div className="flex shrink-0 w-3 h-3 rounded-full bg-[#00ff9d] mt-2 group-hover:shadow-[0_0_20px_rgba(0,255,157,0.8)] transition-all duration-300" />
               <p className="text-xl text-white/90 leading-relaxed">{item}</p>
             </motion.div>
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <Button
-            size="lg"
-            className="bg-transparent border-2 border-[#20d5d5] text-[#20d5d5] hover:bg-[#20d5d5] hover:text-[#0a0a0f] transition-all duration-300 font-mono text-lg px-8 py-6"
-            style={{ boxShadow: "0 0 20px rgba(32, 213, 213, 0.3)" }}
-          >
+          <Button size="xl" variant="uapeOutlineAlt" className="font-mono text-lg">
             [ Begin Collaboration ]
           </Button>
         </div>
       </motion.div>
-    </section>
+    </Section>
   )
 }

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { useState, useEffect } from "react"
+import { Section } from "@/src/components/ui/section"
 
 export function WhySection() {
   const [particles, setParticles] = useState<Array<{ left: number; top: number; duration: number; delay: number }>>([])
@@ -18,7 +19,7 @@ export function WhySection() {
   }, [])
 
   return (
-    <section id="why" className="min-h-screen flex items-center justify-center px-6 py-24 relative">
+    <Section id="why" className="relative">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -57,6 +58,6 @@ export function WhySection() {
           />
         ))}
       </div>
-    </section>
+    </Section>
   )
 }
