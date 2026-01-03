@@ -50,7 +50,7 @@ export function StackSection() {
               transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
               viewport={{ once: true }}
             >
-              <Card className="bg-[#1a1a24] border-primary/30 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.3)]">
+              <Card className="bg-[#1a1a24] border-primary/40 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.3)]">
                 <h3 className="text-2xl font-mono font-bold text-primary mb-3">{tool.title}</h3>
                 <p className="text-secondary leading-relaxed">{tool.description}</p>
               </Card>

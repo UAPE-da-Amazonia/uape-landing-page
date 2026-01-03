@@ -143,7 +143,7 @@ export function Navbar() {
                       key={item.href}
                       onClick={() => scrollToSection(item.href)}
                       className={`block w-full text-left font-mono text-sm py-2 transition-colors duration-300 ${
-                        isActive ? "text-[#00ff9d]" : "text-white/70 hover:text-[#00ff9d]"
+                        isActive ? "text-primary" : "text-white/70 hover:text-primary"
                       }`}
                       whileTap={{ scale: 0.95 }}
                     >
