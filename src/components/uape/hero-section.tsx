@@ -17,9 +17,9 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
   >([]);
 
   useEffect(() => {
-    // Inicia rotação após montagem para evitar mismatch de hidratação
+    // Inicia rotação 3D (eixo Y) após montagem para evitar mismatch de hidratação
     controls.start({
-      rotate: 360,
+      rotateY: 360,
       transition: {
         duration: 20,
         repeat: Infinity,
@@ -51,10 +51,11 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
         className="text-center z-10"
       >
         <div className="mb-12 flex justify-center">
+          <div className="[perspective:1000px]">
           <motion.div
             initial={false}
             animate={controls}
-            className="relative w-48 h-48"
+            className="relative w-48 h-48 transform-gpu [transform-style:preserve-3d]"
           >
             <svg
               viewBox="0 0 200 200"
@@ -106,6 +107,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
               />
             </svg>
           </motion.div>
+          </div>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-mono font-bold mb-6 text-balance">
