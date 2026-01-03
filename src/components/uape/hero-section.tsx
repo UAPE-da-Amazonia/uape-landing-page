@@ -2,13 +2,14 @@
 
 import { Button } from "@/src/components/ui/button";
 import { Section } from "@/src/components/ui/section";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 interface HeroSectionProps {
   scrollY: number;
 }
 
 export function HeroSection({ scrollY }: HeroSectionProps) {
+  const shouldReduceMotion = useReducedMotion();
   return (
     <Section
       id="home"
@@ -22,12 +23,12 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
       >
         <div className="mb-12 flex justify-center">
           <motion.div
-            animate={{ rotateY: 360 }}
-            transition={{
-              duration: 20,
-              repeat: Number.POSITIVE_INFINITY,
-              ease: "linear",
-            }}
+            animate={shouldReduceMotion ? {} : { rotateY: 360 }}
+            transition={
+              shouldReduceMotion
+                ? undefined
+                : { duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }
+            }
             className="relative w-48 h-48"
           >
             <svg
@@ -96,10 +97,10 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
         </Button>
       </motion.div>
 
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-20 pointer-events-none">
         <div className="absolute inset-0 bg-linear-to-b from-[rgba(0,255,157,0.04)] to-[rgba(32,213,213,0.04)]" />
         <div
-          className="absolute inset-0 bg-[linear-gradient(rgba(0,255,157,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,157,0.1)_1px,transparent_1px)] bg-size-[50px_50px]"
+          className="absolute inset-0 bg-[linear-gradient(rgba(0,255,157,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,157,0.1)_1px,transparent_1px)] bg-size:[50px_50px] will-change-transform"
           style={{
             transform: `translateY(${scrollY * 0.3}px)`,
           }}

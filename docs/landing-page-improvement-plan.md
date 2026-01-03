@@ -111,13 +111,17 @@
   - Status: Concluída
   - Entregas: FeaturesSection com Cards e ícones, inserida em page.tsx. Stats foi removido do escopo.
 - Fase 3: Ornamentos visuais, gradientes, parágrafos justificados e revisão de acessibilidade.
-  - Status: Em progresso
-  - Entregas: Gradientes discretos em Why/Stack/Experience/Hero; foco acessível (Navbar e ScrollToTop); hyphens-auto no About; substituição de styles inline por utilitários Tailwind; padronização de cores com tokens (primary/secondary) em todas as seções e variantes de Botão UAPÉ.
-  - Próximas ações: revisar contraste AA/AAA (cores e estados), padronizar estados de foco/hover nos demais links/botões, consolidar tokens de cor (opcional).
+  - Status: Concluída
+  - Entregas: Gradientes discretos em Why/Stack/Experience/Hero; foco acessível (Navbar e ScrollToTop); hyphens-auto no About; substituição de styles inline por utilitários Tailwind; padronização de cores com tokens (primary/secondary) em todas as seções e variantes UAPÉ de Button; Footer ajustado para tokens e consistência de borda/texto.
+  - Observações: contrastes revisados manualmente para o esquema atual; próximos ajustes de contraste, se necessários, serão tratados na Fase 4 junto ao QA responsivo.
 - Fase 4: Refino de movimento, performance e QA visual responsivo.
   - Status: Em progresso
   - Entregas: unificação de easings (easeOut) e durações em Hero/Why/Stack/Experience/Features; grids revisados e sem alterações funcionais.
   - Próximas ações: revisar CLS e performance geral, QA em breakpoints principais (mobile/tablet/desktop), testar navegação/scroll e feedback de foco.
+  - Atualizações desta iteração:
+    - Responsividade: Section com px/py escalonados por breakpoint.
+    - Performance: utilitário will-change-transform aplicado ao overlay do Hero; partículas do Why dinamicamente reduzidas no mobile e respeitando prefers-reduced-motion; rotação do Hero desativada quando reduced motion está ativo.
+    - Acessibilidade/percepção: overlays com pointer-events-none, mantendo interação limpa.
 
 ## Critérios de Aceitação Globais
 - Hierarquia tipográfica clara, com pesos variados.

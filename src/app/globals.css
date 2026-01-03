@@ -107,3 +107,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .will-change-transform {
+    will-change: transform;
+  }
+}

@@ -1,22 +1,29 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion, useReducedMotion } from "framer-motion"
 import { useState, useEffect } from "react"
 import { Section } from "@/src/components/ui/section"
 
 export function WhySection() {
   const [particles, setParticles] = useState<Array<{ left: number; top: number; duration: number; delay: number }>>([])
+  const shouldReduceMotion = useReducedMotion()
 
   useEffect(() => {
+    if (shouldReduceMotion) {
+      setParticles([])
+      return
+    }
+    const isMobile = typeof window !== "undefined" && window.innerWidth < 640
+    const count = isMobile ? 8 : 15
     setParticles(
-      Array.from({ length: 15 }, () => ({
+      Array.from({ length: count }, () => ({
         left: Math.random() * 100,
         top: Math.random() * 100,
         duration: 3 + Math.random() * 2,
         delay: Math.random() * 2,
       }))
     )
-  }, [])
+  }, [shouldReduceMotion])
 
   return (
     <Section id="why" className="relative">
