@@ -51,11 +51,11 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
         className="text-center z-10"
       >
         <div className="mb-12 flex justify-center">
-          <div className="[perspective:1000px]">
+          <div className="perspective-[1000px]">
           <motion.div
             initial={false}
             animate={controls}
-            className="relative w-48 h-48 transform-gpu [transform-style:preserve-3d]"
+            className="relative w-48 h-48 transform-gpu [transform-3d]"
           >
             <svg
               viewBox="0 0 200 200"
