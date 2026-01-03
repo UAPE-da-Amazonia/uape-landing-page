@@ -6,6 +6,8 @@ import { WhySection } from "@/src/components/uape/why-section"
 import { StackSection } from "@/src/components/uape/stack-section"
 import { AboutSection } from "@/src/components/uape/about-section"
 import { ExperienceSection } from "@/src/components/uape/experience-section"
+import { FeaturesSection } from "@/src/components/uape/features-section"
+import { StatsSection } from "@/src/components/uape/stats-section"
 import { Footer } from "@/src/components/uape/footer"
 import { Navbar } from "@/src/components/uape/navbar"
 import { ScrollToTop } from "@/src/components/uape/scroll-to-top"
@@ -24,6 +26,8 @@ export default function UapePage() {
       <Navbar />
       <HeroSection scrollY={scrollY} />
       <WhySection />
+      <FeaturesSection />
+      <StatsSection />
       <StackSection />
       <AboutSection />
       <ExperienceSection />

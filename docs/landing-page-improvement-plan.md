@@ -105,9 +105,17 @@
 
 ## Roadmap de Implementação
 - Fase 1: Tipografia, espaçamento e variantes de Botão (uape/outline/solid).
+  - Status: Concluída
+  - Entregas: Section (UI), variantes de Button (uapeOutline/uapeOutlineAlt/uapeSolid/uapeSolidAlt, size xl), aplicação em Hero/Experience/Why/Stack/About, parágrafos justificados no About.
 - Fase 2: Blocos (Cards, Features, Stats), grids e fluxo de leitura.
+  - Status: Concluída
+  - Entregas: FeaturesSection com Cards e ícones, StatsSection com números e ornamentos leves, inseridos em page.tsx.
 - Fase 3: Ornamentos visuais, gradientes, parágrafos justificados e revisão de acessibilidade.
+  - Status: Pendente
+  - Próximas ações: refinar gradientes de fundo por seção, revisar contraste AA/AAA, focus/hover padronizados no Navbar/links, avaliar hyphenation em parágrafos longos.
 - Fase 4: Refino de movimento, performance e QA visual responsivo.
+  - Status: Pendente
+  - Próximas ações: ajustar delays e easings de framer-motion, revisar CLS, realizar QA em breakpoints e testar navegação/scroll.
 
 ## Critérios de Aceitação Globais
 - Hierarquia tipográfica clara, com pesos variados.
