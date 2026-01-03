@@ -52,7 +52,7 @@
 - Ações:
   - Introduzir Cards e Feature Blocks para resumir pontos-chave (títulos, ícones, descrições).
   - Usar grids responsivos (1→2→3 colunas) conforme breakpoint.
-  - Adicionar um bloco “Stats” (números/indicadores) com ícones/ornamentos discretos.
+  - (Removido) Bloco “Stats”: não será incluído por não conter dados reais.
 - Critérios:
   - Informações escaneáveis em 3–5 segundos por bloco.
   - Layout responsivo sem colapsar densidade de conteúdo.
@@ -107,9 +107,9 @@
 - Fase 1: Tipografia, espaçamento e variantes de Botão (uape/outline/solid).
   - Status: Concluída
   - Entregas: Section (UI), variantes de Button (uapeOutline/uapeOutlineAlt/uapeSolid/uapeSolidAlt, size xl), aplicação em Hero/Experience/Why/Stack/About, parágrafos justificados no About.
-- Fase 2: Blocos (Cards, Features, Stats), grids e fluxo de leitura.
+- Fase 2: Blocos (Cards, Features), grids e fluxo de leitura.
   - Status: Concluída
-  - Entregas: FeaturesSection com Cards e ícones, StatsSection com números e ornamentos leves, inseridos em page.tsx.
+  - Entregas: FeaturesSection com Cards e ícones, inserida em page.tsx. Stats foi removido do escopo.
 - Fase 3: Ornamentos visuais, gradientes, parágrafos justificados e revisão de acessibilidade.
   - Status: Pendente
   - Próximas ações: refinar gradientes de fundo por seção, revisar contraste AA/AAA, focus/hover padronizados no Navbar/links, avaliar hyphenation em parágrafos longos.

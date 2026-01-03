@@ -36,15 +36,18 @@ export function WhySection() {
         </p>
       </motion.div>
 
+      <div
+        className="absolute inset-0 opacity-20 pointer-events-none bg-[linear-gradient(180deg,rgba(0,255,157,0.05)_0%,rgba(32,213,213,0.05)_100%)]"
+      />
+
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {particles.map((particle, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 rounded-full bg-[#00ff9d]"
+            className="absolute w-2 h-2 rounded-full bg-[#00ff9d] shadow-[0_0_10px_rgba(0,255,157,0.8)]"
             style={{
               left: `${particle.left}%`,
               top: `${particle.top}%`,
-              boxShadow: "0 0 10px rgba(0, 255, 157, 0.8)",
             }}
             animate={{
               y: [0, -30, 0],

@@ -62,7 +62,7 @@ export function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-100 transition-all duration-300 ${
         scrolled
           ? "bg-[#0a0a0f]/95 backdrop-blur-md border-b border-[#00ff9d]/20"
           : "bg-transparent"
@@ -86,7 +86,7 @@ export function Navbar() {
                 <motion.button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className={`relative font-mono text-sm transition-colors duration-300 ${
+                  className={`relative font-mono text-sm transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00ff9d]/40 focus-visible:rounded-md ${
                     isActive ? "text-[#00ff9d]" : "text-white/70 hover:text-[#00ff9d]"
                   }`}
                   whileHover={{ scale: 1.05 }}
@@ -124,7 +124,7 @@ export function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/50 z-[90] md:hidden"
+              className="fixed inset-0 bg-black/50 z-90 md:hidden"
               onClick={() => setIsOpen(false)}
             />
             <motion.div
@@ -132,7 +132,7 @@ export function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className="md:hidden bg-[#0a0a0f]/98 backdrop-blur-md border-t border-[#00ff9d]/20 fixed top-20 left-0 right-0 z-[95] max-h-[calc(100vh-5rem)] overflow-y-auto"
+              className="md:hidden bg-[#0a0a0f]/98 backdrop-blur-md border-t border-[#00ff9d]/20 fixed top-20 left-0 right-0 z-95 max-h-[calc(100vh-5rem)] overflow-y-auto"
             >
               <div className="px-6 py-4 space-y-4">
                 {navItems.map((item) => {
@@ -159,4 +159,3 @@ export function Navbar() {
     </motion.nav>
   )
 }
-

@@ -29,7 +29,7 @@ const tools = [
 
 export function StackSection() {
   return (
-    <Section id="stack">
+    <Section id="stack" className="relative">
       <div className="max-w-7xl w-full">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -58,6 +58,7 @@ export function StackSection() {
           ))}
         </div>
       </div>
+      <div className="absolute inset-0 opacity-10 pointer-events-none bg-linear-to-b from-[rgba(32,213,213,0.06)] to-[rgba(0,255,157,0.06)]" />
     </Section>
   )
 }

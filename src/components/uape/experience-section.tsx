@@ -12,7 +12,7 @@ const achievements = [
 
 export function ExperienceSection() {
   return (
-    <Section id="experience">
+    <Section id="experience" className="relative">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -44,6 +44,7 @@ export function ExperienceSection() {
           </Button>
         </div>
       </motion.div>
+      <div className="absolute inset-0 opacity-10 pointer-events-none bg-linear-to-b from-[rgba(0,255,157,0.05)] to-[rgba(32,213,213,0.05)]" />
     </Section>
   )
 }
