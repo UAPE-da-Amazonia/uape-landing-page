@@ -83,10 +83,10 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-mono font-bold mb-6 text-balance">
-          <span className="text-[#00ff9d]">UAPÉ</span>: Engineering the
+          <span className="text-primary">UAPÉ</span>: Engineering the
           Architecture of Global Health
         </h1>
-        <p className="text-xl md:text-2xl text-[#20d5d5] max-w-4xl mx-auto mb-12 leading-relaxed text-pretty">
+        <p className="text-xl md:text-2xl text-secondary max-w-4xl mx-auto mb-12 leading-relaxed text-pretty">
           Translating complex epidemiological challenges into resilient data
           ecosystems. From field collection to global surveillance, we build the
           foundations that save lives.
@@ -97,6 +97,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
       </motion.div>
 
       <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 bg-linear-to-b from-[rgba(0,255,157,0.04)] to-[rgba(32,213,213,0.04)]" />
         <div
           className="absolute inset-0 bg-[linear-gradient(rgba(0,255,157,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,157,0.1)_1px,transparent_1px)] bg-size-[50px_50px]"
           style={{

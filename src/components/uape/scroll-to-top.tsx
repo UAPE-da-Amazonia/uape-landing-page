@@ -43,7 +43,7 @@ export function ScrollToTop() {
           exit={{ opacity: 0, scale: 0.5, y: 20 }}
           transition={{ duration: 0.3 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-[99] w-14 h-14 rounded-full bg-[#00ff9d] text-[#0a0a0f] flex items-center justify-center shadow-lg hover:shadow-[0_0_30px_rgba(0,255,157,0.6)] transition-all duration-300 font-mono font-bold"
+          className="fixed bottom-8 right-8 z-99 w-14 h-14 rounded-full bg-[#00ff9d] text-[#0a0a0f] flex items-center justify-center shadow-lg hover:shadow-[0_0_30px_rgba(0,255,157,0.6)] transition-all duration-300 font-mono font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00ff9d]/50"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           aria-label="Scroll to top"
@@ -54,4 +54,3 @@ export function ScrollToTop() {
     </AnimatePresence>
   )
 }
-

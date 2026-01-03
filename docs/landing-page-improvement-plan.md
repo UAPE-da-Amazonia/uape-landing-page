@@ -86,8 +86,8 @@
 ### 8) Paleta de Cores
 - Diagnóstico: pouca exploração das cores de marca.
 - Ações:
-  - Criar tokens CSS (ex.: --uape-primary: #00ff9d; --uape-secondary: #20d5d5; --uape-bg: #0a0a0f; neutros complementares).
-  - Introduzir gradientes discretos e estados (hover/focus/active) usando a paleta.
+  - Usar tokens do tema Tailwind (text-primary, text-secondary, bg-primary, border-primary) já mapeados em globals.css.
+  - Introduzir gradientes discretos e estados (hover/focus/active) usando a paleta e utilitários arbitrários.
   - Garantir contraste mínimo AA.
 - Critérios:
   - Paleta aplicada de forma consistente em componentes e fundos.
@@ -111,8 +111,9 @@
   - Status: Concluída
   - Entregas: FeaturesSection com Cards e ícones, inserida em page.tsx. Stats foi removido do escopo.
 - Fase 3: Ornamentos visuais, gradientes, parágrafos justificados e revisão de acessibilidade.
-  - Status: Pendente
-  - Próximas ações: refinar gradientes de fundo por seção, revisar contraste AA/AAA, focus/hover padronizados no Navbar/links, avaliar hyphenation em parágrafos longos.
+  - Status: Em progresso
+  - Entregas: Gradientes discretos em Why/Stack/Experience/Hero; foco acessível (Navbar e ScrollToTop); hyphens-auto no About; substituição de styles inline por utilitários Tailwind; padronização de cores com tokens (primary/secondary) em todas as seções e variantes de Botão UAPÉ.
+  - Próximas ações: revisar contraste AA/AAA (cores e estados), padronizar estados de foco/hover nos demais links/botões, consolidar tokens de cor (opcional).
 - Fase 4: Refino de movimento, performance e QA visual responsivo.
   - Status: Pendente
   - Próximas ações: ajustar delays e easings de framer-motion, revisar CLS, realizar QA em breakpoints e testar navegação/scroll.

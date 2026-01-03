@@ -36,7 +36,7 @@ export function StackSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-[#00ff9d]"
+          className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-primary"
         >
           Native Mastery of the Global Health Ecosystem
         </motion.h2>
@@ -50,9 +50,9 @@ export function StackSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-[#1a1a24] border-[#00ff9d]/30 p-6 h-full hover:border-[#00ff9d] transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.3)]">
-                <h3 className="text-2xl font-mono font-bold text-[#00ff9d] mb-3">{tool.title}</h3>
-                <p className="text-[#20d5d5] leading-relaxed">{tool.description}</p>
+              <Card className="bg-[#1a1a24] border-primary/30 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.3)]">
+                <h3 className="text-2xl font-mono font-bold text-primary mb-3">{tool.title}</h3>
+                <p className="text-secondary leading-relaxed">{tool.description}</p>
               </Card>
             </motion.div>
           ))}

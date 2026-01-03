@@ -20,7 +20,7 @@ export function ExperienceSection() {
         viewport={{ once: true }}
         className="max-w-5xl w-full"
       >
-        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-[#00ff9d]">Proven at Scale.</h2>
+        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-primary">Proven at Scale.</h2>
 
         <div className="space-y-8 text-center">
           {achievements.map((item, index) => (
@@ -32,7 +32,7 @@ export function ExperienceSection() {
               viewport={{ once: true }}
               className="mx-auto w-fit flex items-center gap-3 group"
             >
-              <div className="shrink-0 w-3 h-3 rounded-full bg-[#00ff9d] group-hover:shadow-[0_0_20px_rgba(0,255,157,0.8)] transition-all duration-300" />
+              <div className="shrink-0 w-3 h-3 rounded-full bg-primary group-hover:shadow-[0_0_20px_rgba(0,255,157,0.8)] transition-all duration-300" />
               <p className="text-xl text-white/90 leading-relaxed">{item}</p>
             </motion.div>
           ))}

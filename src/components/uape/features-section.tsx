@@ -47,7 +47,7 @@ export function FeaturesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-[#00ff9d]"
+          className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-primary"
         >
           Engineered Blocks for Real Impact
         </motion.h2>
@@ -63,14 +63,14 @@ export function FeaturesSection() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <Card className="bg-[#1a1a24] border-[#00ff9d]/30 p-6 h-full hover:border-[#00ff9d] transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.25)]">
+                <Card className="bg-[#1a1a24] border-primary/30 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.25)]">
                   <div className="flex items-start gap-4">
-                    <div className="shrink-0 w-10 h-10 rounded-xl bg-[#00ff9d]/10 border border-[#00ff9d]/30 flex items-center justify-center text-[#00ff9d]">
+                    <div className="shrink-0 w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
                       <Icon size={22} />
                     </div>
                     <div>
                       <h3 className="text-xl font-mono font-bold text-white mb-1">{f.title}</h3>
-                      <p className="text-[#20d5d5] leading-relaxed">{f.description}</p>
+                      <p className="text-secondary leading-relaxed">{f.description}</p>
                     </div>
                   </div>
                 </Card>

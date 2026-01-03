@@ -27,20 +27,20 @@ export function AboutSection() {
         viewport={{ once: true }}
         className="max-w-5xl"
       >
-        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-12 text-center text-[#00ff9d]">
+        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-12 text-center text-primary">
           Two Decades of Intelligence. A Lifetime of Impact.
         </h2>
 
-        <div className="space-y-6 text-lg md:text-xl text-white/90 leading-relaxed text-justify">
+        <div className="space-y-6 text-lg md:text-xl text-white/90 leading-relaxed text-justify hyphens-auto">
           <p>
-            The <span className="text-[#00ff9d] font-semibold">UAPÉ Collective</span> is not just a software agency. We
-            are a specialized task force of <span className="text-[#20d5d5]">Software Engineers</span>,
-            <span className="text-[#20d5d5]"> Epidemiologists</span>, and{" "}
-            <span className="text-[#20d5d5]">Statisticians</span>.
+            The <span className="text-primary font-semibold">UAPÉ Collective</span> is not just a software agency. We
+            are a specialized task force of <span className="text-secondary">Software Engineers</span>,
+            <span className="text-secondary"> Epidemiologists</span>, and{" "}
+            <span className="text-secondary">Statisticians</span>.
           </p>
 
           <p>
-            With over <span className="text-[#00ff9d] font-semibold">20 years of experience</span> at the highest levels
+            With over <span className="text-primary font-semibold">20 years of experience</span> at the highest levels
             of global health, our leadership team comprises PhDs and subject matter experts who have sat at the tables
             of the world&apos;s leading international health organizations.
           </p>
@@ -48,8 +48,8 @@ export function AboutSection() {
           <p>
             We don&apos;t just &quot;write code.&quot; We understand the nuances of disease transmission, the sensitivity of
             demographic data, and the urgency of a response. We bridge the gap between{" "}
-            <span className="text-[#20d5d5]">Computer Science</span> and
-            <span className="text-[#20d5d5]"> Public Health Science</span>, ensuring that the systems we build are
+            <span className="text-secondary">Computer Science</span> and
+            <span className="text-secondary"> Public Health Science</span>, ensuring that the systems we build are
             technically superior and epidemiologically sound.
           </p>
         </div>

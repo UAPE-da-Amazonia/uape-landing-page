@@ -27,10 +27,10 @@ export function WhySection() {
         viewport={{ once: true }}
         className="max-w-5xl text-center"
       >
-        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-8 text-[#00ff9d]">
+        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-8 text-primary">
           Data is Abundant. Insight is Timely.
         </h2>
-        <p className="text-xl md:text-2xl text-[#20d5d5] leading-relaxed">
+        <p className="text-xl md:text-2xl text-secondary leading-relaxed">
           Public health doesn&apos;t have a &quot;data shortage&quot;—it has an engineering bottleneck. We solve the fragmentation
           between field-level data and high-level policy decision-making.
         </p>
@@ -44,7 +44,7 @@ export function WhySection() {
         {particles.map((particle, i) => (
           <motion.div
             key={i}
-            className="absolute w-2 h-2 rounded-full bg-[#00ff9d] shadow-[0_0_10px_rgba(0,255,157,0.8)]"
+            className="absolute w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(0,255,157,0.8)]"
             style={{
               left: `${particle.left}%`,
               top: `${particle.top}%`,

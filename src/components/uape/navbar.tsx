@@ -86,8 +86,8 @@ export function Navbar() {
                 <motion.button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className={`relative font-mono text-sm transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#00ff9d]/40 focus-visible:rounded-md ${
-                    isActive ? "text-[#00ff9d]" : "text-white/70 hover:text-[#00ff9d]"
+                  className={`relative font-mono text-sm transition-colors duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 focus-visible:rounded-md ${
+                    isActive ? "text-primary" : "text-white/70 hover:text-primary"
                   }`}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

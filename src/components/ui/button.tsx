@@ -20,13 +20,13 @@ const buttonVariants = cva(
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
         uapeSolid:
-          "bg-[#00ff9d] text-[#0a0a0f] hover:bg-[#00ff9d]/90 focus-visible:ring-[rgba(0,255,157,0.35)]",
+          "bg-primary text-background hover:bg-primary/90 focus-visible:ring-primary/40",
         uapeSolidAlt:
-          "bg-[#20d5d5] text-[#0a0a0f] hover:bg-[#20d5d5]/90 focus-visible:ring-[rgba(32,213,213,0.35)]",
+          "bg-secondary text-background hover:bg-secondary/90 focus-visible:ring-secondary/40",
         uapeOutline:
-          "border-2 border-[#00ff9d] bg-transparent text-[#00ff9d] hover:bg-[#00ff9d] hover:text-[#0a0a0f] shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(0,255,157,0.4)]",
+          "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-background shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(0,255,157,0.4)]",
         uapeOutlineAlt:
-          "border-2 border-[#20d5d5] bg-transparent text-[#20d5d5] hover:bg-[#20d5d5] hover:text-[#0a0a0f] shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(32,213,213,0.4)]",
+          "border-2 border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-background shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(32,213,213,0.4)]",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
