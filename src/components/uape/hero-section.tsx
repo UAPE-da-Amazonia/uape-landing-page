@@ -17,7 +17,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
         className="text-center z-10"
       >
         <div className="mb-12 flex justify-center">

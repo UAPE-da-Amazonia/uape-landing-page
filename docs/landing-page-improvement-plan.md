@@ -115,8 +115,9 @@
   - Entregas: Gradientes discretos em Why/Stack/Experience/Hero; foco acessível (Navbar e ScrollToTop); hyphens-auto no About; substituição de styles inline por utilitários Tailwind; padronização de cores com tokens (primary/secondary) em todas as seções e variantes de Botão UAPÉ.
   - Próximas ações: revisar contraste AA/AAA (cores e estados), padronizar estados de foco/hover nos demais links/botões, consolidar tokens de cor (opcional).
 - Fase 4: Refino de movimento, performance e QA visual responsivo.
-  - Status: Pendente
-  - Próximas ações: ajustar delays e easings de framer-motion, revisar CLS, realizar QA em breakpoints e testar navegação/scroll.
+  - Status: Em progresso
+  - Entregas: unificação de easings (easeOut) e durações em Hero/Why/Stack/Experience/Features; grids revisados e sem alterações funcionais.
+  - Próximas ações: revisar CLS e performance geral, QA em breakpoints principais (mobile/tablet/desktop), testar navegação/scroll e feedback de foco.
 
 ## Critérios de Aceitação Globais
 - Hierarquia tipográfica clara, com pesos variados.

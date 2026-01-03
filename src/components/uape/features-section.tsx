@@ -45,7 +45,7 @@ export function FeaturesSection() {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true }}
           className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-primary"
         >
@@ -60,10 +60,10 @@ export function FeaturesSection() {
                 key={f.title}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                transition={{ duration: 0.6, delay: index * 0.1, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
-                <Card className="bg-[#1a1a24] border-primary/30 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.25)]">
+                <Card className="bg-card border-primary/30 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.25)]">
                   <div className="flex items-start gap-4">
                     <div className="shrink-0 w-10 h-10 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary">
                       <Icon size={22} />

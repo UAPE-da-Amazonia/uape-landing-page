@@ -16,7 +16,7 @@ export function ExperienceSection() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
         className="max-w-5xl w-full"
       >
@@ -28,7 +28,7 @@ export function ExperienceSection() {
               key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
               viewport={{ once: true }}
               className="mx-auto w-fit flex items-center gap-3 group"
             >

@@ -23,7 +23,7 @@ export function WhySection() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
         className="max-w-5xl text-center"
       >
@@ -41,25 +41,26 @@ export function WhySection() {
       />
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {particles.map((particle, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(0,255,157,0.8)]"
-            style={{
-              left: `${particle.left}%`,
-              top: `${particle.top}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              opacity: [0.3, 1, 0.3],
-            }}
-            transition={{
-              duration: particle.duration,
-              repeat: Number.POSITIVE_INFINITY,
-              delay: particle.delay,
-            }}
-          />
-        ))}
+          {particles.map((particle, i) => (
+            <motion.div
+              key={i}
+              className="absolute w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_rgba(0,255,157,0.8)]"
+              style={{
+                left: `${particle.left}%`,
+                top: `${particle.top}%`,
+              }}
+              animate={{
+                y: [0, -30, 0],
+                opacity: [0.3, 1, 0.3],
+              }}
+              transition={{
+                duration: particle.duration,
+                repeat: Number.POSITIVE_INFINITY,
+                delay: particle.delay,
+                ease: "easeOut",
+              }}
+            />
+          ))}
       </div>
     </Section>
   )

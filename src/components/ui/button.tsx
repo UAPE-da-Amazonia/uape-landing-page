@@ -24,9 +24,9 @@ const buttonVariants = cva(
         uapeSolidAlt:
           "bg-secondary text-background hover:bg-secondary/90 focus-visible:ring-secondary/40",
         uapeOutline:
-          "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-background shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(0,255,157,0.4)]",
+          "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-background shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(0,255,157,0.4)] focus-visible:ring-2 focus-visible:ring-primary/40",
         uapeOutlineAlt:
-          "border-2 border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-background shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(32,213,213,0.4)]",
+          "border-2 border-secondary bg-transparent text-secondary hover:bg-secondary hover:text-background shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(32,213,213,0.4)] focus-visible:ring-2 focus-visible:ring-secondary/40",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
