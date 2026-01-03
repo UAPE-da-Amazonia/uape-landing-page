@@ -126,6 +126,8 @@
     - Mobile: delays de animação removidos em listas (Stack, Features, Experience); gaps de grid ajustados por breakpoint.
     - Hero: correção da animação do SVG (rotações contínuas com repeat e easing); restauração do fundo com partículas animadas em overlay.
     - Overlay global: simplificado para exibir somente partículas verdes sobre o fundo original da LP, sem gradiente nem grid.
+    - Interação: animação ao clicar no botão de voltar ao topo (ArrowUp com impulso).
+    - Scroll: easing custom no voltar ao topo (easeInOutCubic via requestAnimationFrame).
   - Observações finais: CLS e navegação/scroll comportam-se conforme esperado após ajustes; animações respeitam prefers-reduced-motion; revisão visual responsiva concluída.
 
 ## Critérios de Aceitação Globais

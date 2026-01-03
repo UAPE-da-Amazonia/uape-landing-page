@@ -1,11 +1,13 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ArrowUp } from "lucide-react"
 
 export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false)
+  const [blast, setBlast] = useState(false)
+  const rafRef = useRef<number | null>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,10 +30,31 @@ export function ScrollToTop() {
   }, [])
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    })
+    setBlast(true)
+    const startY = window.scrollY
+    if (startY <= 0) {
+      setBlast(false)
+      return
+    }
+    const duration = startY < 800 ? 600 : 1000
+    const startTime = performance.now()
+    const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2)
+    const step = (now: number) => {
+      const elapsed = now - startTime
+      const progress = Math.min(1, elapsed / duration)
+      const eased = ease(progress)
+      const current = Math.max(0, Math.round(startY * (1 - eased)))
+      window.scrollTo(0, current)
+      if (progress < 1) {
+        rafRef.current = requestAnimationFrame(step)
+      } else {
+        window.scrollTo(0, 0)
+        setBlast(false)
+        rafRef.current = null
+      }
+    }
+    if (rafRef.current) cancelAnimationFrame(rafRef.current)
+    rafRef.current = requestAnimationFrame(step)
   }
 
   return (
@@ -48,7 +71,20 @@ export function ScrollToTop() {
           whileTap={{ scale: 0.9 }}
           aria-label="Scroll to top"
         >
-          <ArrowUp size={24} />
+          <motion.div
+            animate={
+              blast
+                ? {
+                    y: [-2, -18, 0],
+                    scale: [1, 1.15, 1],
+                    rotate: [0, -20, 0],
+                  }
+                : undefined
+            }
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <ArrowUp size={24} />
+          </motion.div>
         </motion.button>
       )}
     </AnimatePresence>
