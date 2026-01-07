@@ -3,27 +3,38 @@
 import { Card } from "@/src/components/ui/card"
 import { motion } from "framer-motion"
 import { Section } from "@/src/components/ui/section"
+import { Database, Network, Smartphone, Siren, LayoutDashboard, Globe } from "lucide-react"
 
 const tools = [
   {
     title: "DHIS2",
-    description: "Architecture & Data Warehousing",
+    description: "Enterprise-scale health information systems. Custom modules for national aggregate and tracker data.",
+    icon: Database,
   },
   {
     title: "GoData",
-    description: "Outbreak Investigation & Chain of Transmission",
+    description: "Contact tracing and outbreak investigation. Chain of transmission visualization and field epidemiology.",
+    icon: Network,
   },
   {
     title: "GetODK",
-    description: "Field-grade Data Collection & ETL",
+    description: "Offline-first mobile data collection. Complex logic forms, geospatial data, and automated ETL pipelines.",
+    icon: Smartphone,
   },
   {
     title: "EWARS / EIOS",
-    description: "Early Warning, Alert, and Response Systems",
+    description: "Early Warning, Alert, and Response Systems. Signal detection from unstructured open-source intelligence.",
+    icon: Siren,
   },
   {
     title: "Custom Dashboards",
-    description: "Real-time visualization for Ministries and International Authorities",
+    description: "Bespoke visualization engines built on React/D3. Real-time situational awareness for Emergency Operations Centers.",
+    icon: LayoutDashboard,
+  },
+  {
+    title: "Interoperability",
+    description: "FHIR-compliant integration layers connecting disparate health systems (EMRs, Labs, Logistics) into a unified data lake.",
+    icon: Globe,
   },
 ]
 
@@ -57,8 +68,13 @@ export function StackSection() {
               }}
               viewport={{ once: true }}
             >
-              <Card className="bg-[#1a1a24] border-primary/40 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.3)]">
-                <h3 className="text-2xl font-mono font-bold text-primary mb-3">{tool.title}</h3>
+              <Card className="bg-[#1a1a24] border-primary/40 p-6 h-full hover:border-primary transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,255,157,0.3)] group">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-background transition-colors duration-300">
+                    <tool.icon className="w-8 h-8" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-2xl font-mono font-bold text-primary mt-1">{tool.title}</h3>
+                </div>
                 <p className="text-secondary leading-relaxed">{tool.description}</p>
               </Card>
             </motion.div>

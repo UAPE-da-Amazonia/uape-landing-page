@@ -37,13 +37,13 @@ Este documento guia a transformação visual da Landing Page da UAPÉ, focado em
   - Diferenciar de botões secundários (Outline).
 
 ## Fase 3: Elementos Gráficos e Ícones (Pausas Visuais)
-**Foco:** Ilustrar conceitos abstratos e quebrar blocos de texto.
+**Foco:** Ilustrar conceitos abstratos e quebrar blocos de texto. (Concluído)
 
-- [ ] **Ícones (Lucide React)**
+- [x] **Ícones (Lucide React)**
   - Adicionar ícones aos cards de "Stack" e "Why Us".
   - Usar ícones grandes e com traço fino (`stroke-1`) para manter elegância técnica.
 
-- [ ] **Diagramas / Elementos Abstratos**
+- [x] **Diagramas / Elementos Abstratos**
   - Criar representações visuais simples para processos (ex: conectores, linhas de fluxo).
   - Usar borders/divisores estilizados entre seções.
 

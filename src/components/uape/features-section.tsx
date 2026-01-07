@@ -8,32 +8,32 @@ import { ShieldCheck, Database, Network, Activity, Layers, Radar } from "lucide-
 const features = [
   {
     title: "Resilience by Design",
-    description: "Arquiteturas que resistem a picos de demanda e falhas em campo.",
+    description: "Architectures that withstand demand spikes and field failures.",
     icon: ShieldCheck,
   },
   {
     title: "Data Gravity",
-    description: "Modelagem e pipelines que reduzem atrito entre coleta e análise.",
+    description: "Modeling and pipelines that reduce friction between collection and analysis.",
     icon: Database,
   },
   {
     title: "Interoperability First",
-    description: "Integração nativa com ecossistemas globais e padrões abertos.",
+    description: "Native integration with global ecosystems and open standards.",
     icon: Network,
   },
   {
     title: "Actionable Insight",
-    description: "Camadas analíticas focadas em decisão e tempo de resposta.",
+    description: "Analytical layers focused on decision-making and response time.",
     icon: Activity,
   },
   {
     title: "Modular Stacks",
-    description: "Componentes substituíveis com baixo acoplamento e alto reuso.",
+    description: "Replaceable components with low coupling and high reusability.",
     icon: Layers,
   },
   {
     title: "Early Warning",
-    description: "Sinais e alertas com visualizações concebidas para vigilância.",
+    description: "Signals and alerts with visualizations designed for vigilance.",
     icon: Radar,
   },
 ]
