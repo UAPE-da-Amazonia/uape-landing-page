@@ -119,7 +119,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
           ecosystems. From field collection to global surveillance, we build the
           foundations that save lives.
         </p>
-        <Button size="xl" variant="uapeOutline" className="font-mono text-lg">
+        <Button size="xl" variant="uapeSolid" className="font-mono text-lg shadow-[0_0_30px_rgba(0,255,157,0.3)] hover:shadow-[0_0_50px_rgba(0,255,157,0.5)] transition-all duration-300">
           [ Initialize Consultation ]
         </Button>
       </motion.div>

@@ -27,17 +27,14 @@ Este documento guia a transformação visual da Landing Page da UAPÉ, focado em
   - Aumentar gap entre elementos de lista e parágrafos.
 
 ## Fase 2: Paleta e Contraste (Profundidade Visual)
-**Foco:** Tirar o aspecto "chapado" e destacar ações importantes.
+**Foco:** Tirar o aspecto "chapado" e destacar ações importantes. (Mantendo a paleta original, sem adicionar novas cores) - **Concluído**
 
-- [ ] **Variação de Fundo (Backgrounds)**
-  - Alternar seções entre:
-    - Fundo Padrão (quase preto/azul profundo).
-    - Fundo Secundário (tom levemente mais claro ou com tint de ciano/verde).
-    - Fundo com Gradiente Sutil (radial ou linear suave).
+- [x] **Variação de Fundo (Backgrounds)**
+  - (Revertido a pedido do usuário: manter fundo padrão consistente).
 
-- [ ] **Cor Exclusiva de CTA**
-  - Definir uma cor de destaque "quente" ou de alto contraste (ex: um tom específico do gradiente ou branco puro com glow) EXCLUSIVA para botões de ação principal.
-  - Diferenciar do verde/ciano usados em textos decorativos.
+- [x] **Cor Exclusiva de CTA**
+  - Usar a variante **Solid Primary** (`bg-primary text-background`) para botões de ação principal, garantindo destaque máximo sem introduzir novas cores.
+  - Diferenciar de botões secundários (Outline).
 
 ## Fase 3: Elementos Gráficos e Ícones (Pausas Visuais)
 **Foco:** Ilustrar conceitos abstratos e quebrar blocos de texto.

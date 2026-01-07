@@ -46,7 +46,7 @@ export function ExperienceSection() {
         </div>
 
         <div className="mt-16 text-center">
-          <Button size="xl" variant="uapeOutlineAlt" className="font-mono text-lg">
+          <Button size="xl" variant="uapeSolid" className="font-mono text-lg shadow-[0_0_30px_rgba(0,255,157,0.3)] hover:shadow-[0_0_50px_rgba(0,255,157,0.5)] transition-all duration-300">
             [ Begin Collaboration ]
           </Button>
         </div>
