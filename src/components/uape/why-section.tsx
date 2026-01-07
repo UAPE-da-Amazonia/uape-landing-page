@@ -32,12 +32,12 @@ export function WhySection() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="max-w-5xl text-center"
+        className="max-w-3xl mx-auto text-center"
       >
         <h2 className="text-4xl md:text-6xl font-mono font-bold mb-8 text-primary">
           Data is Abundant. Insight is Timely.
         </h2>
-        <p className="text-xl md:text-2xl text-secondary leading-relaxed">
+        <p className="text-xl md:text-2xl text-secondary leading-loose">
           Public health doesn&apos;t have a &quot;data shortage&quot;—it has an engineering bottleneck. We solve the fragmentation
           between field-level data and high-level policy decision-making.
         </p>

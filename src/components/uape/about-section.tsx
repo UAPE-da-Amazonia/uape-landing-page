@@ -25,13 +25,13 @@ export function AboutSection() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="max-w-5xl"
+        className="max-w-3xl mx-auto"
       >
         <h2 className="text-4xl md:text-6xl font-mono font-bold mb-12 text-center text-primary">
           Two Decades of Intelligence. A Lifetime of Impact.
         </h2>
 
-        <div className="space-y-6 text-lg md:text-xl text-white/90 leading-relaxed text-justify hyphens-auto">
+        <div className="space-y-6 text-lg md:text-xl text-white/90 leading-loose text-justify hyphens-auto">
           <p>
             The <span className="text-primary font-semibold">UAPÉ Collective</span> is not just a software agency. We
             are a specialized task force of <span className="text-secondary">Software Engineers</span>,

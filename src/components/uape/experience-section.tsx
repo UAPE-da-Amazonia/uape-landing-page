@@ -18,7 +18,7 @@ export function ExperienceSection() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="max-w-5xl w-full"
+        className="max-w-4xl mx-auto w-full"
       >
         <h2 className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-primary">Proven at Scale.</h2>
 
@@ -40,7 +40,7 @@ export function ExperienceSection() {
               className="mx-auto w-fit flex items-center gap-3 group"
             >
               <div className="shrink-0 w-3 h-3 rounded-full bg-primary group-hover:shadow-[0_0_20px_rgba(0,255,157,0.8)] transition-all duration-300" />
-              <p className="text-xl text-white/90 leading-relaxed">{item}</p>
+              <p className="text-xl text-white/90 leading-loose text-left">{item}</p>
             </motion.div>
           ))}
         </div>

@@ -114,7 +114,7 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
           <span className="text-primary">UAPÉ</span>: Engineering the
           Architecture of Global Health
         </h1>
-        <p className="text-xl md:text-2xl text-secondary max-w-4xl mx-auto mb-12 leading-relaxed text-pretty">
+        <p className="text-xl md:text-2xl text-secondary max-w-4xl mx-auto mb-12 leading-loose text-pretty">
           Translating complex epidemiological challenges into resilient data
           ecosystems. From field collection to global surveillance, we build the
           foundations that save lives.
