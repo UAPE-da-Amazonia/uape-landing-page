@@ -20,9 +20,9 @@ const buttonVariants = cva(
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
         uapeSolid:
-          "bg-primary text-background hover:bg-primary/90 focus-visible:ring-primary/40",
+          "bg-primary text-background rounded-full font-mono font-bold uppercase tracking-widest text-xs hover:bg-primary hover:shadow-[0_0_30px_rgba(0,255,157,0.5)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:shadow-[0_0_10px_rgba(0,255,157,0.3)] focus-visible:ring-primary/40",
         uapeSolidAlt:
-          "bg-secondary text-background hover:bg-secondary/90 focus-visible:ring-secondary/40",
+          "bg-secondary text-background rounded-full font-mono font-bold uppercase tracking-widest text-xs hover:bg-secondary hover:shadow-[0_0_30px_rgba(32,213,213,0.5)] transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:shadow-[0_0_10px_rgba(32,213,213,0.3)] focus-visible:ring-secondary/40",
         uapeOutline:
           "border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-background shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-[0_0_20px_rgba(0,255,157,0.4)] focus-visible:ring-2 focus-visible:ring-primary/40",
         uapeOutlineAlt:

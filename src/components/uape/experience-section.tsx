@@ -4,10 +4,22 @@ import { Button } from "@/src/components/ui/button"
 import { Section } from "@/src/components/ui/section"
 import { motion } from "framer-motion"
 
-const achievements = [
-  "Architected data integration for UN-level health agencies during global health emergencies.",
-  "Deployed surveillance infrastructure used by dozens of Member States for real-time outbreak tracking.",
-  "Engineered custom analytical layers for the world's most prominent intergovernmental health bodies.",
+const stats = [
+  {
+    value: "20+",
+    label: "Years Experience",
+    description: "Architecting data systems for UN-level agencies during global health emergencies.",
+  },
+  {
+    value: "50+",
+    label: "Member States",
+    description: "Deploying surveillance infrastructure for real-time outbreak tracking across borders.",
+  },
+  {
+    value: "1B+",
+    label: "Records Processed",
+    description: "Engineering analytical layers that handle massive scale epidemiological data.",
+  },
 ]
 
 export function ExperienceSection() {
@@ -18,36 +30,40 @@ export function ExperienceSection() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="max-w-4xl mx-auto w-full"
+        className="max-w-6xl mx-auto w-full"
       >
-        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-16 text-center text-primary">Proven at Scale.</h2>
+        <h2 className="text-4xl md:text-6xl font-mono font-bold mb-20 text-center text-primary">Proven at Scale.</h2>
 
-        <div className="space-y-8 text-center">
-          {achievements.map((item, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+          {stats.map((stat, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 duration: 0.6,
-                delay:
-                  typeof window !== "undefined" && window.innerWidth < 640
-                    ? 0
-                    : index * 0.2,
+                delay: index * 0.2,
                 ease: "easeOut",
               }}
               viewport={{ once: true }}
-              className="mx-auto w-fit flex items-center gap-3 group"
+              className="flex flex-col items-center group"
             >
-              <div className="shrink-0 w-3 h-3 rounded-full bg-primary group-hover:shadow-[0_0_20px_rgba(0,255,157,0.8)] transition-all duration-300" />
-              <p className="text-xl text-white/90 leading-loose text-left">{item}</p>
+              <div className="text-4xl md:text-5xl font-sans font-bold text-white mb-3 group-hover:text-primary transition-colors duration-300 tracking-tight">
+                {stat.value}
+              </div>
+              <div className="text-xl font-bold text-primary mb-4 tracking-wide uppercase">
+                {stat.label}
+              </div>
+              <p className="text-secondary/80 leading-relaxed max-w-xs mx-auto">
+                {stat.description}
+              </p>
             </motion.div>
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <Button size="xl" variant="uapeSolid" className="font-mono text-lg shadow-[0_0_30px_rgba(0,255,157,0.3)] hover:shadow-[0_0_50px_rgba(0,255,157,0.5)] transition-all duration-300">
-            [ Begin Collaboration ]
+        <div className="mt-24 text-center">
+          <Button size="xl" variant="uapeSolid">
+            Begin Collaboration
           </Button>
         </div>
       </motion.div>

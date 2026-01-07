@@ -47,20 +47,25 @@ Este documento guia a transformação visual da Landing Page da UAPÉ, focado em
   - Criar representações visuais simples para processos (ex: conectores, linhas de fluxo).
   - Usar borders/divisores estilizados entre seções.
 
-## Fase 4: Humanização e Contexto ("Quem somos")
-**Foco:** Trazer calor e prova social para a página "fria".
+## Fase 4: Humanização e Prova Social
+**Foco:** Conectar a tecnologia com pessoas e impacto real. (Concluído)
 
-- [ ] **Imagens de Contexto**
-  - Inserir imagens de fundo com overlay forte (laboratório, mapa, dados, engenharia) em seções chave.
-  - Garantir que o texto sobreposto continue legível.
+- [x] **Imagens de Contexto**
+  - Adicionar elemento visual "Global Network" (Globo giratório + Cards flutuantes) na seção "Who We Are".
+  - Substituir listas por visualizações gráficas onde possível.
 
-- [ ] **Seção "Experience" em Números**
-  - Transformar texto corrido em "Big Numbers" (ex: "10+ Years", "50+ Projects").
-  - Layout de grid para exibir estatísticas.
+- [x] **Big Numbers (Experience Section)**
+  - Transformar a lista de bullet points em um grid de estatísticas (ex: "20+ Anos", "50+ Países").
+  - Usar tipografia grande e bold para os números.
+  - Atualizado para fonte Sans-Serif Bold (mais limpa) e tamanho equilibrado (5xl) para elegância.
 
-- [ ] **Redesign "Who we are"**
-  - Layout mais editorial (foto + texto ou grid visual).
-  - Adicionar elemento visual que represente a equipe ou a missão.
+## Fase 5: Refinamento Final (Concluído)
+**Foco:** Polimento visual e interatividade.
+
+- [x] **Melhoria nos Botões (CTA)**
+  - Redesign completo: Formato de pílula (rounded-full), texto em caixa alta (uppercase tracking-widest) e efeito de glow neon.
+  - Remoção de elementos visuais "sujos" (colchetes) para um visual mais premium.
+  - Interatividade refinada com shadows e lift.
 
 ---
 
