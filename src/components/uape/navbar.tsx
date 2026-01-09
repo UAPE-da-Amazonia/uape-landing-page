@@ -10,6 +10,7 @@ const navItems = [
   { label: "Stack", href: "#stack" },
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
+  { label: "Contact", href: "#contact" },
 ]
 
 export function Navbar() {
@@ -22,11 +23,19 @@ export function Navbar() {
       setScrolled(window.scrollY > 50)
     
       const sections = navItems.map((item) => item.href.substring(1))
+      // Special check for bottom of the page
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+         setActiveSection(sections[sections.length - 1])
+         return
+      }
+
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section)
         if (element) {
           const rect = element.getBoundingClientRect()
-          return rect.top <= 100 && rect.bottom >= 100
+          // Check if the top of the section is near the top of the viewport
+          // OR if the section covers a significant portion of the viewport
+          return (rect.top <= 150 && rect.bottom >= 150)
         }
         return false
       })

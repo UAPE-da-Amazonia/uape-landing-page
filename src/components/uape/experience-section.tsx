@@ -62,8 +62,10 @@ export function ExperienceSection() {
         </div>
 
         <div className="mt-24 text-center">
-          <Button size="xl" variant="uapeSolid">
-            Begin Collaboration
+          <Button size="xl" variant="uapeSolid" asChild>
+            <a href="mailto:adm@uape.us">
+              Begin Collaboration
+            </a>
           </Button>
         </div>
       </motion.div>

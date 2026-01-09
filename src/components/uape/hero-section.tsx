@@ -119,8 +119,10 @@ export function HeroSection({ scrollY }: HeroSectionProps) {
           ecosystems. From field collection to global surveillance, we build the
           foundations that save lives.
         </p>
-        <Button size="xl" variant="uapeSolid">
-          Initialize Consultation
+        <Button size="xl" variant="uapeSolid" asChild>
+          <a href="mailto:adm@uape.us">
+            Initialize Consultation
+          </a>
         </Button>
       </motion.div>
 
